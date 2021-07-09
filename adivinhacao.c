@@ -53,15 +53,11 @@ int main(){
                     if(n<x&&chance>0){
                         if (n>=menor)
                             menor = n+1;
-                        if(n < menor)
-                            menor = menor;
-                        }
+                     }
                     if(n>x && chance>0){
                         if (n<=maior)
                             maior = n-1;
-                        if(n > maior)
-                            maior = maior;
-                    }
+                     }
                     printf("Digite um numero, entre %d e %d:       ", menor, maior);
                     scanf("%d", &n);
                          if(n==nu){
@@ -79,19 +75,19 @@ int main(){
             if(n==x){
                 if (dif == 3){
                     if((count -5)>=0)
-                    pontT = PONTMAX - ((count-5) *10) ;
+                      pontT = PONTMAX - ((count-5) *10) ;
                     if((count-5)<0)
-                       pontT = PONTMAX;
+                      pontT = PONTMAX;
 
                 }else if(dif == 2){
                     if((count -7)>=0)
-                    pontT = PONTMAX - ((count-7) *5) ;
+                       pontT = PONTMAX - ((count-7) *5) ;
                     if((count-7)<0)
                        pontT = PONTMAX;
 
                 }else if (dif == 1){
-                     if((count -10)>=0)
-                    pontT = PONTMAX - ((count-10) *4) ;
+                    if((count -10)>=0)
+                       pontT = PONTMAX - ((count-10) *4) ;
                     if((count-10)<0)
                        pontT = PONTMAX;
 
@@ -109,6 +105,7 @@ int main(){
                 prim = 1;
                 count=0;
 
-            }}
+            }
+  }
 return 0;
 }
